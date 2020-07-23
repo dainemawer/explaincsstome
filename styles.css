@@ -1,0 +1,65 @@
+@import '~highlight.js/styles/dracula.css';
+
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease-in;
+}
+
+body.dark-mode {
+    background-color: #1a1919;
+    color: #999;
+    transition: background-color 0.3s ease-in;
+}
+
+body.dark-mode #newsletter-subscribe {
+    background-color: rgba(255,255,255, 0.05);
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.sr-only:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+a {
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transition: border-bottom-color 250ms ease-in;
+    padding-bottom: 0.15rem;
+}
+
+.active a {
+    border-bottom-color: #E61F00;
+}
+
+a:hover,
+a:focus {
+    border-bottom-color: #f92300;
+    oultine: 0;
+    text-decoration: none;
+}

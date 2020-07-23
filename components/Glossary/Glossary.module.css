@@ -1,0 +1,12 @@
+.definition {
+    font-size: 0.875rem;
+    margin-left: 1.5rem;
+}
+
+.list {
+    border-bottom: 1px solid hsla(0,0%,0%,0.2);
+}
+
+.list:last-child {
+    border-bottom: 0;
+}
