@@ -1,8 +1,10 @@
 ---
-title: '💎 css in js'
+title: 'css in js'
+icon: '💎'
 excerpt: 'Adopt a better understanding of how CSS selectors and selector patterns work'
 coverImage: '/assets/blog/hello-world/cover.jpg'
 highlight: false
+published: false
 date: '21 July 2020'
 author:
   name: Daine Mawer

@@ -17,10 +17,20 @@ const Articles = ({ posts }) => (
 
         <div className={styles.articles}>
             {posts && posts.map( post => {
-                const { title, date, excerpt, author, slug, content } = post;
+                const { title, date, excerpt, author, slug, content, icon, published } = post;
                 const { name } = author;
                 return (
-                    <Article key={`key-${title}`} title={title} excerpt={excerpt} date={date} author={name} slug={slug} readTime={calculateReadTime(content)} />
+                    <Article
+                        key={`key-${title}`}
+                        title={title}
+                        excerpt={excerpt}
+                        date={date}
+                        author={name}
+                        slug={slug}
+                        readTime={calculateReadTime(content)}
+                        icon={icon}
+                        published={published}
+                    />
                 )
             })}
         </div>

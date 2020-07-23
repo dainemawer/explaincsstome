@@ -17,3 +17,21 @@
 .title {
     margin-bottom: 0.25rem;
 }
+
+.published {
+    opacity: 1;
+}
+
+.draft {
+    opacity: 0.5;
+}
+
+.draft a {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.author {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
